@@ -20,6 +20,6 @@ def consume(event, _):
         if not errors:
             logging.info("New rows have been added.")
         else:
-            logging.error("Encountered errors while inserting row: {}".format(errors))
+            raise ValueError("Encountered errors while inserting row: {}".format(errors))
     else:
         logging.info("Message did not contain data key")

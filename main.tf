@@ -32,7 +32,7 @@ resource "google_storage_bucket_object" "archive" {
 }
 
 resource "google_cloudfunctions_function" "function" {
-  name        = "pubsub_to_bq_${lower(random_string.random.result)}"
+  name        = "pubsub_to_bq_${split(".", var.bigquery_table)[2]}_${lower(random_string.random.result)}"
   description = "Pubsub topic subscriber to sent messages directly to BigQuery"
   runtime     = "python39"
   region      = var.region

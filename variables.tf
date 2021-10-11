@@ -4,10 +4,9 @@ variable "topic_name" {
 
 variable "bigquery_table" {
   type        = string
-  description = "table_id of target table"
+  description = "`table_id` cloud function variable of the target table"
 }
 
 variable "region" {
-  type        = string
-  description = "Region to deploy dataflow job to"
+  type = string
 }
