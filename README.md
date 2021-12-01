@@ -48,6 +48,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_bigquery_table"></a> [bigquery\_table](#input\_bigquery\_table) | `table_id` cloud function variable of the target table | `string` | n/a | yes |
+| <a name="input_project_name"></a> [project\_name](#input\_project\_name) | n/a | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | n/a | `string` | n/a | yes |
 | <a name="input_topic_name"></a> [topic\_name](#input\_topic\_name) | Topic name to consume messages from | `any` | n/a | yes |
 
